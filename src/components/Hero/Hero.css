@@ -40,7 +40,7 @@
 }
 
 .person-pill {
-  height: 14rem;
+  height: 13rem;
   width: 6rem;
   border-radius: 999px;
   overflow: hidden;
@@ -89,4 +89,37 @@
   color: white;
   font-size: 1.4rem;
   line-height: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .h-wrapper {
+    height: max-content;
+  }
+  .h-wrapper .container {
+    padding-top: 5rem;
+  }
+  .h-container {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    padding-bottom: 3rem;
+  }
+  .h-arrow {
+    display: none;
+  }
+  .h-right {
+    flex: 1;
+    align-items: center;
+  }
+
+  .h-title {
+    align-items: center;
+    font-size: 2.2rem;
+  }
+  .h-des {
+    font-size: 1.2rem;
+    width: 80%;
+    text-align: center;
+  }
 }
